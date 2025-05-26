@@ -1,0 +1,761 @@
+*{
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "MIER";
+  src: url(assets/fonts/MierA-Book.ttf);
+}
+
+@font-face {
+  font-family: "MIER-BOLD";
+  src: url(assets/fonts/MierA-Bold.ttf);
+}
+
+body {
+  font-family: 'MIER', 'Poppins', sans-serif;
+}
+
+.outer {
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  max-width: 100%;
+  padding: 0px 64px;
+  background-color: white;
+}
+
+.icon1 p,.icon2 p{
+  margin: 0;
+}
+
+.full-nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background: white;
+  top: 0px;
+}
+
+.logo-title h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  color: rgb(87, 13, 72);
+  margin-right: 12.8px;
+}
+
+.search-box {
+  width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  font-size: 16px;
+  height: 21.6px;
+  width: 600px;
+  border: 1px solid rgb(206, 206, 222);
+  border-radius: 4px;
+  padding: 10px 10px 10px 35px;
+}
+
+.search-box i {
+  transform: translateX(36px);
+  color: gray;
+  font-size: 1.2rem;
+  margin-right: 4px;
+}
+
+.icons {
+  display: flex;
+  width: 472.2px;
+}
+
+.line {
+  height: 40px;
+  width: 1.56px;
+  background-color: #CECEDE;
+  align-self: center;
+}
+
+.icons p {
+  font-size: 16px;
+  margin: 0 18px 0 18px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.icon1 {
+  margin-left: 15px;
+}
+
+.icon1,
+.icon2 {
+  display: flex;
+  height: 69.6px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mid-line {
+  height: 1px;
+  background-color: rgb(206, 206, 222);
+  border-radius: 2px;
+  width: 100%;
+}
+
+.box {
+  max-width: 100%;
+  padding: 0 64px;
+}
+
+.nav-down {
+  max-width: 100%;
+  height: 52px;
+  padding: 0;
+  background-color: white;
+  overflow-x: auto;
+  scrollbar-width: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.item-list {
+  border-bottom: 3px solid transparent;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 2px 2px 0px 0px;
+  padding: 0px 8px;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.item-list p {
+  color: rgb(53, 53, 67);
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.item-list p:hover {
+  color: rgb(159, 32, 137);
+  cursor: pointer;
+  border-bottom: 3px solid rgb(159, 32, 137);
+}
+
+.imagebanner {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  color: transparent;
+  padding-top: 120px;
+}
+
+.full-ban-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  position: absolute;
+  left: 63%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+}
+
+.banner-text {
+  font-family: "MIER-BOLD";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.shopnow-text {
+  border-radius: 8px;
+  background: rgb(249, 249, 249);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px 0px;
+  cursor: pointer;
+  color: rgb(88, 10, 70);
+  font-size: 24px;
+  padding: 11px 29px 13px;
+  text-align: center;
+}
+
+.pink-bg {
+  max-width: 100%;
+  padding: 12px;
+  background-color: #fdeefa;
+}
+
+.child-of-pink {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(220, 148, 208, 0.5);
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.inner-text1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 32px;
+  justify-content: center;
+  position: relative;
+}
+
+.return-icon {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.inner-text1::after {
+  content: "|";
+  position: absolute;
+  right: 0px;
+  color: rgba(220, 148, 208, 0.5);
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.inner-text2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 32px;
+  justify-content: center;
+  position: relative;
+}
+
+.cod-icon {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.inner-text2::after {
+  content: "|";
+  position: absolute;
+  right: 0px;
+  color: rgba(220, 148, 208, 0.5);
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+
+.inner-text3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 32px;
+  justify-content: center;
+  position: relative;
+}
+
+.lowest-price-icon {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.inner-text3::after {
+  content: "|";
+  position: absolute;
+  right: 0px;
+  color: rgba(220, 148, 208, 0.5);
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.collection {
+  padding: 40px 64px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.collection-item {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 8px 0px;
+  gap: 24px;
+  display: flex;
+}
+
+.kzfwae {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.kzfwae:hover {
+  transform: translateY(-4px);
+}
+
+.kzfwae p {
+  padding: 16px 0 0 0;
+}
+
+.gold-banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.gold-banner img {
+  position: relative;
+  width: 100%;
+}
+
+.gold-shopnow {
+  position: absolute;
+  bottom: 11%;
+  left: 12.5%;
+  border: 1px solid rgb(255, 209, 130);
+  background: rgb(63, 31, 17);
+  color: rgb(255, 209, 130);
+  padding: 11px 29px 13px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.grid-four {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  position: absolute;
+  width: 21%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 66.66%;
+}
+
+.grid-four img {
+  color: inherit;
+  display: block;
+  position: relative;
+  width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gold-banner-image:hover {
+  transform: translateY(-4px);
+}
+
+.original-brand {
+  max-width: 100%;
+  padding: 60px 64px 16px;
+  position: relative;
+}
+
+.org-brand {
+  font-size: 32px;
+  color: rgb(53, 53, 67);
+}
+
+.org-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.viewall {
+  color: rgb(159, 32, 137);
+  font-size: 18px;
+  display: flex;
+}
+
+.brand-products {
+  display: flex;
+  gap: 24px;
+  padding: 0 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.running-outer {
+  background: rgb(240, 233, 255);
+  padding: 12px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.running-inside {
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.running-brand {
+  display: flex;
+  gap: 24px;
+  animation: 30s linear 0s infinite normal none running scroll;
+  padding: 16px 0px;
+}
+
+.running-brand:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.run-brand-img {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px;
+  transition: transform 0.2s;
+}
+
+.run-brand-img:hover{
+  transform: translateY(-4px);
+}
+
+.run-brand-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.new-big-banner {
+  position: relative;
+  overflow: hidden;
+  background: rgb(44, 24, 16);
+  display: flex;
+  align-items: center;
+}
+
+.new-big-banner img {
+  width: 100%;
+  position: relative;
+}
+
+.new-banner-button {
+  padding: 11px 29px 13px;
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  color: rgb(88, 10, 70);
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  position: absolute;
+  bottom: 23%;
+  left: 4%;
+}
+
+.new-banner-img {
+  gap: 34px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  width: 70%;
+  justify-content: center;
+}
+
+.new-banner-img a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.brtmt {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.brtmt:hover{
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.15) 0 8px 16px;
+}
+
+.brtmt img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.new-banner-img-button {
+  font-size: 16px;
+  border-radius: 10px;
+  width: 100%;
+  color: rgb(88, 10, 70);
+  padding: 4px 0px 6px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(255, 157, 0);
+  background: rgb(255, 245, 229);
+}
+
+.shopping-area{
+  background-color: rgb(255, 255, 255);
+  max-width: 1920px;
+  padding: 0 18px;
+}
+
+.shopping-area h4{
+    color: rgb(53, 53, 67);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: "Mier book";
+    text-align: left;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px 0px 28px;
+}
+
+.buying-products{
+  display: flex;
+  transform: translateY(0px);
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-size-adjust: 100%;
+}
+
+.full-single-prod{
+  margin-bottom: 24px;
+  padding: 0 20px 0 0;
+  flex: 0 0 18.5%;
+  max-width: 18.5%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+}
+
+.full-single-prod a{
+  text-decoration: none;
+}
+
+.prod-pic-price{
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(234, 234, 242);
+}
+
+.prod-pic{
+  position: relative;
+  height: 232px;
+  width: 100%;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.prod-pic img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.prod-quantity{
+  background: rgb(255, 255, 255);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 0.5rem 0px 0px;
+  padding: 0.125rem 0.25rem;
+}
+
+.prod-quantity span{
+  color: rgb(97, 97, 115);
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0px;
+  padding: 0px;
+} 
+
+.prod-price{
+  min-height: 172px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.name-and-price{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(159, 32, 137);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.prod-name{
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.prod-name p{
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(139, 139, 163);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier book";
+    margin: 0px;
+    padding: 0px;
+}
+
+.prod-org-price{
+  display: flex;
+  align-items: center;
+  background-color: inherit !important;
+  border-radius: 8px;
+  padding-top: 6px;
+  white-space: nowrap;
+}
+
+.prod-org-price h5{
+  color: rgb(53, 53, 67);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Mier bold";
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+
+.delievery-type{
+  background-color: inherit !important;
+  line-height: 16px;
+  border-radius: 8px;
+  padding-top: 12px;
+}
+
+.del-text{
+  pointer-events: none;
+    color: rgb(97, 97, 115);
+    background: rgb(248, 248, 255);
+    padding: 4px 8px;
+    border-radius: 48px;
+    display: inline-flex;
+}
+
+.span-text{
+  color: rgb(97, 97, 115);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Mier demi";
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.public-review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit !important;
+    border-radius: 8px;
+    padding-top: 12px;
+}
+
+.review-icon{
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 4px 8px;
+    background: rgb(3, 141, 99);
+    fill: rgb(255, 255, 255);
+}
+
+.review-icon span{
+  color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier demi";
+    margin: 0px;
+    padding: 0px;
+}
+
+.fa-star{
+  margin-left: 4px;
+  border-style: none;
+}
+
+.review-num{
+  padding: 0px 0.25rem;
+  color: rgb(139, 139, 163);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Mier demi";
+    margin: 0px;
+}
